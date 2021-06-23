@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Vishesh Khanna">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify</title>
+    <link rel="icon" type="image/png" sizes="60x60" href="favicon-60.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="favicon-192.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="main-header">
+
+        <!-- navigation bar -->
+        <nav id="navigation-bar">
+            <div class="nav-main">
+
+                <div class="branding">
+                    <a href="index.html">
+                        <div class="logo-holder">
+                            <img id="logo-img" class="nav-logo" src="assets/musify-logo.png" alt="logo">
+                        </div>
+                    </a>
+                    <h3 id="logo-name">Musify </h3>
+                    <a href="artist.html" style="text-decoration: none; color: white;"> <h5 id="fav-btn">
+                 Favourites
+                    </h5></a>
+                </div>
+
+                <div id="search-bar-container">
+                    <div id="search-bar-div">
+                        <input id="search-bar" placeholder="Search" type="text">
+                        <span id="search-btn"><i class="fas fa-search"></i></span>
+                    </div>
+                    <span class="bell-logo"><i class="fas fa-bell"></i></span>
+                    <img id="prof-pic" src="assets/my.jpeg" alt="profile">
+                    <label class="label-menu-check" for="menu-chk">
+                        <div id="menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <input type="checkbox" id="menu-chk">
+            <div class="menu-bar-drop">
+                <div>
+                    <p>Favourites</p>
+                </div>
+                <div>
+                    <p>Notifications</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <div class="main-content">
+
+            <!-- image carousel -->
+            <div class="image-carousel">
+                <div class="car-1 car-pos">
+                    <img class="img-car-size" src="assets/car-img-1.jpg" alt="">
+                </div>
+                <div class="car-3 car-pos">
+                    <img class="img-car-size" src="assets/car-img-2.jpg" alt="">
+                </div>
+                <div class="car-2 car-pos">
+                    <img class="img-car-size" src="assets/car-img-3.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- latest release section -->
+            <section class="latest-release">
+                <div class="section-heading">
+                    <h4>
+                        Latest Release
+                    </h4>
+                </div>
+                <div class="latest-release-container">
+                    <div class="latest-release-song">
+                        <div class="latest-release-img-container">
+                            <img class="latest-release-img" src="assets/songs/on-my-way.jpg" alt="on-my-way">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-details">
+                            <h5>On My Way!</h5>
+                            <p>MAR 14, 2019</p>
+                        </div>
+                        <div class="latest-release-utility">
+                            <div class="flap-container">
+                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                <div class="flap">
+                                    <a><i class="fas fa-play"></i> &nbsp; Play Now</a>
+                                    <hr>
+                                    <a><i class="fas fa-plus"></i> &nbsp; Add to queue</a>
+                                    <hr>
+                                    <a> <i class="far fa-heart"></i> &nbsp; Add to Favourites</a>
+                                    <hr>
+                                    <a> <i class="fas fa-info-circle"></i> &nbsp; Get Info</a>
+                                </div>
+                            </div>
+                            <p>3:37</p>
+                        </div>
+                    </div>
+                    <div class="latest-release-song">
+                        <div class="latest-release-img-container">
+                            <img class="latest-release-img" src="assets/songs/mirage.jpg" alt="mirage">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-details">
+                            <h5>Mirage</h5>
+                            <p>MAR 14, 2019</p>
+                        </div>
+                        <div class="latest-release-utility">
+                            <div class="flap-container">
+                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                <div class="flap">
+                                    <a><i class="fas fa-play"></i> &nbsp; Play Now</a>
+                                    <hr>
+                                    <a><i class="fas fa-plus"></i> &nbsp; Add to queue</a>
+                                    <hr>
+                                    <a> <i class="far fa-heart"></i> &nbsp; Add to Favourites</a>
+                                    <hr>
+                                    <a> <i class="fas fa-info-circle"></i> &nbsp; Get Info</a>
+                                </div>
+                            </div>
+                            <p>3:37</p>
+                        </div>
+                    </div>
+                    <div class="latest-release-song">
+                        <div class="latest-release-img-container">
+                            <img class="latest-release-img" src="assets/songs/in-the end.jpg" alt="in-the-end">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class=" latest-song-details">
+                            <h5>In The End</h5>
+                            <p>MAR 14, 2019</p>
+                        </div>
+                        <div class="latest-release-utility">
+                            <div class="flap-container">
+                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                <div class="flap">
+                                    <a><i class="fas fa-play"></i> &nbsp; Play Now</a>
+                                    <hr>
+                                    <a><i class="fas fa-plus"></i> &nbsp; Add to queue</a>
+                                    <hr>
+                                    <a> <i class="far fa-heart"></i> &nbsp; Add to Favourites</a>
+                                    <hr>
+                                    <a> <i class="fas fa-info-circle"></i> &nbsp; Get Info</a>
+                                </div>
+                            </div>
+                            <p>3:37</p>
+                        </div>
+                    </div>
+                    <div class="latest-release-song">
+                        <div class="latest-release-img-container">
+                            <img class="latest-release-img" src="assets/songs/malang.jpeg" alt="malang">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-details">
+                            <h5>Malang</h5>
+                            <p>MAR 14, 2019</p>
+                        </div>
+                        <div class="latest-release-utility">
+                            <div class="flap-container">
+                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                <div class="flap">
+                                    <a><i class="fas fa-play"></i> &nbsp; Play Now</a>
+                                    <hr>
+                                    <a><i class="fas fa-plus"></i> &nbsp; Add to queue</a>
+                                    <hr>
+                                    <a> <i class="far fa-heart"></i> &nbsp; Add to Favourites</a>
+                                    <hr>
+                                    <a> <i class="fas fa-info-circle"></i> &nbsp; Get Info</a>
+                                </div>
+                            </div>
+                            <p>3:37</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular artist section -->
+
+            <section class="popular-artist-section">
+                <div class="section-heading">
+                    <h4>
+                        Popular Artist
+                    </h4>
+                </div>
+                <div class="artist-container">
+
+                    <div class="artist">
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/ed-sheeran.jpeg" alt="ed sheeran">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Ed Sheeran</h5>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="artist">
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/coldplay.jpg" alt="Coldplay">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Coldplay</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="artist">
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/zayn.jpeg" alt="Zayn">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Zayn</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="artist">
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/arijit-singh.jpg" alt="Arijit Singh">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Arijit Singh</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="artist">
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/bruno-mars.jpg" alt="Bruno Mars">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Bruno Mars</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="artist">
+                        <a href="artist.html">
+                            <div class="artist-image-container">
+                                <img class="artist-image" src="assets/artist/charlie-puth.jpeg" alt="Charlie Puth">
+                            </div>
+                            <div class="artist-name">
+                                <h5>Charlie Puth</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Genre Section -->
+            <section class="genre">
+
+                <div class="genre-logo-heading-container">
+                    <img class="genre-heading-logo" src="assets/genre.png" alt="genre">
+                </div>
+
+                <div class="genre-logo-container">
+                    <img class="genre-logo" src="assets/genre/love.png" alt="genre">
+                    <p class="genre-logo-name">Love</p>
+                </div>
+
+                <div class="genre-logo-container">
+                    <img class="genre-logo" src="assets/genre/retro.jpeg" alt="genre">
+                    <p class="genre-logo-name">Retro</p>
+                </div>
+
+                <div class="genre-logo-container">
+                    <img class="genre-logo" src="assets/genre/chill.jpg" alt="genre">
+                    <p class="genre-logo-name">Chill</p>
+                </div>
+
+                <div class="genre-logo-container">
+                    <img class="genre-logo" src="assets/genre/rock.jpeg" alt="genre">
+                    <p class="genre-logo-name">Rock</p>
+                </div>
+
+                <div class="genre-logo-container">
+                    <img class="genre-logo" src="assets/genre/workout.png" alt="genre">
+                    <p class="genre-logo-name">Workout</p>
+                </div>
+
+                <div class="genre-logo-container">
+                    <img class="genre-logo" src="assets/genre/pop.jpg" alt="genre">
+                    <p class="genre-logo-name">Pop</p>
+                </div>
+
+            </section>
+
+            <!-- genre extended -->
+
+            <section class="genre-extend">
+
+                <div class="genre-extended-container">
+                    <img class="genre-extend-img" src="assets/genre/party.jpg" alt="">
+                    <p>Party</p>
+                </div>
+
+                <div class="genre-extended-container">
+                    <img class="genre-extend-img" src="assets/genre/electronic.jpg" alt="">
+                    <p>Electronic</p>
+                </div>
+
+                <div class="genre-extended-container">
+                    <img class="genre-extend-img" src="assets/genre/road-trip.jpg" alt="">
+                    <p>Road Trip</p>
+                </div>
+
+            </section>
+
+            <!-- Latest English -->
+
+            <section class="latest-EH">
+                <div class="section-heading">
+                    <h4>
+                        Latest English
+                    </h4>
+                </div>
+
+                <div class="latest-EH-container">
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/onism.jpeg" alt="onism">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Onism</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/mirage.jpg" alt="mirage">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Mirage</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/worry-bout-us.jpeg" alt="worry-bout-us">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Worry Bout Us</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/shape-of-you.jpg" alt="shape-of-you">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Shape Of You</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/on-my-way.jpg" alt="On-my-way">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>On My Way</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/in-the end.jpg" alt="in-the-end">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>In The End</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Latest Hindi -->
+
+            <section class="latest-EH margin-bottom-130px">
+                <div class="section-heading">
+                    <h4>
+                        Latest Hindi
+                    </h4>
+                </div>
+
+                <div class="latest-EH-container">
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/teri-mitti.jpg" alt="teri-mitti">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Teri Mitti</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/malang.jpeg" alt="malang">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Malang</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/pahctaoge.jpeg" alt="pahctaoge">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Pachtaoge</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/makhna.jpeg" alt="Makhna">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Makhna</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/humraah.jpg" alt="humraah">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Humraah</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-song-EH">
+                        <div class="latest-song-EH-img-container">
+                            <img class="latest-song-EH-img" src="assets/songs/afreen.jpg" alt="afreen">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="latest-song-EH-details">
+                            <h5>Afreen Afreen</h5>
+                            <p>April 16, 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- QUEUE SECTION -->
+
+        <aside class="queue-section">
+            <div class="queue-heading">
+                <h1>
+                    Queue
+                </h1>
+                <div class="queue-flap">
+                    <p>Queue <i class="fas fa-chevron-down"></i></p>
+                    <div class="queue-flap-body">
+                        <div>
+                            <i class="fas fa-play"></i>
+                            <span>Playlist</span>
+                        </div>
+                        <hr>
+                        <div>
+                            <i class="fas fa-heart"></i>
+                            <span>Favourite Songs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="queue-songs-list">
+
+                <div class="queue-song">
+                    <p class="numbering">01</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/mirage.jpg" alt="mirage">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Mirage</h4>
+                        <p>Else</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering playing"><i class="fas fa-play-circle"></i></p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/worry-bout-us.jpeg" alt="worry-bout-us">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Worry Bout Us</h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">03</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/teri-mitti.jpg" alt="teri-mitti">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Teri Mitti</h4>
+                        <p>B Praak</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">04</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/malang.jpeg" alt="malang">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Malang</h4>
+                        <p>Shilpa Rao</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">05</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/in-the end.jpg" alt="in-the-end">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>In the End</h4>
+                        <p>Linkin Park</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">06</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/shape-of-you.jpg" alt="shape-of-you">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Shape Of You</h4>
+                        <p>Ed Sheeran</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">07</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/mirage.jpg" alt="mirage">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Mirage</h4>
+                        <p>Else</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering playing"><i class="fas fa-play-circle"></i></p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/worry-bout-us.jpeg" alt="worry-bout-us">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Worry Bout Us</h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">09</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/teri-mitti.jpg" alt="teri-mitti">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Teri Mitti</h4>
+                        <p>B Praak</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">10</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/malang.jpeg" alt="malang">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Malang</h4>
+                        <p>Shilpa Rao</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">11</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/in-the end.jpg" alt="in-the-end">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>In the End</h4>
+                        <p>Linkin Park</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <p class="numbering">12</p>
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/shape-of-you.jpg" alt="shape-of-you">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Shape Of You</h4>
+                        <p>Ed Sheeran</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer class="play-bar">
+        <div class="footer-container">
+            <div class="playing-song">
+                <div class="playing-song-img-container">
+                    <img class="playing-song-img" src="assets/songs/worry-bout-us.jpeg" alt="worry-bout-us">
+                </div>
+                <div class="playing-song-details">
+                    <h4>Worry Bout Us</h4>
+                    <p>Rosie Lowe</p>
+                </div>
+                <div class="fav-icon-bar">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ban"></i>
+                </div>
+            </div>
+
+            <div class="footer-controls">
+                <div class="footer-controls-button">
+                    <div class="icon-size" id="  shuffle">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div class="icon-size" id="previous">
+                        <i class="fas fa-backward"></i>
+                    </div>
+                    <input type="checkbox" id="play-pause">
+                    <label for="play-pause">
+                        <div id="play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div id="pause">
+                            <i class="fas fa-pause"></i>
+                        </div>
+                    </label>
+                    <div class="icon-size" id="next">
+                        <i class="fas fa-forward"></i>
+                    </div>
+                    <div class="icon-size" id="repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                </div>
+                <div class="footer-controls-progress">
+                    <p>1:39</p>
+                    <input type="range">
+                    <p>4:44</p>
+                </div>
+            </div>
+
+            <div class="sound-controls">
+                <div id="queue">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div id="cast">
+                    <i class="fab fa-chromecast"></i>
+                </div>
+
+                <div id="volume-dwn">
+                    <i class="fas fa-volume-down"></i>
+                </div>
+                <input class="vol-control" type="range">
+                <div id="volume-up">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+
+            </div>
+
+            <div class="queue-open">
+                <label for="queue-chk">
+                    <span>Queue</span>
+                    <i class="fas fa-arrows-alt-v"></i>
+                </label>
+            </div>
+        </div>
+        <input id="queue-chk" type="checkbox">
+        <div class="queue-bottom-section">
+
+            <div class="queue-songs-list">
+
+                <div class="playing-now queue-song">
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/worry-bout-us.jpeg" alt="worry-bout-us">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Worry Bout Us</h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class=" playing-icon fas fa-play-circle"></i>
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/mirage.jpg" alt="mirage">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Mirage</h4>
+                        <p>Else</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/worry-bout-us.jpeg" alt="worry-bout-us">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Worry Bout Us</h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/teri-mitti.jpg" alt="teri-mitti">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Teri Mitti</h4>
+                        <p>B Praak</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/malang.jpeg" alt="malang">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>Malang</h4>
+                        <p>Shilpa Rao</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="queue-song">
+                    <div class="queue-img-container">
+                        <img class="queue-img" src="assets/songs/in-the end.jpg" alt="in-the-end">
+                    </div>
+                    <div class="queue-song-details">
+                        <h4>In the End</h4>
+                        <p>Linkin Park</p>
+                    </div>
+                    <div class="fav-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/c2e4f2d141.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

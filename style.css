@@ -1,0 +1,1182 @@
+html{
+    font-size: 20px;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 0px;
+    background-color: rgb(11, 16, 39) ;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.margin-bottom-130px{
+    margin-bottom: 130px;
+}
+
+/* section */
+
+section{
+    width: 95%;
+}
+
+.section-heading h4{
+    margin: 0px;
+}
+
+.section-heading{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+/* navigaiton bar */
+
+#navigation-bar
+{
+    width: 100%;
+    z-index: 20;
+    background-color:  rgb(11, 16, 39);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    align-items: center;
+    padding: 10px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 2px solid black;
+}
+
+#menu-btn{
+    font-size: 1.2em;
+    display: none;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.nav-main{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menu-bar-drop{
+    width: 95%;
+    overflow: hidden;
+    max-height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: all 0.5s ease-in-out;
+    margin-right: 5px;
+}
+
+.label-menu-check{
+    margin-right: 10px;
+}
+
+#menu-chk{
+    display: none;
+}
+
+.branding{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#logo-img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+#logo-name{
+    margin-left: 10px ;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+#fav-btn{
+    margin-left: 30px;
+    font-weight: 100;
+}
+
+#search-bar-container{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0px;
+    justify-content: space-between;
+}
+
+#search-bar-div{
+    position: relative;
+    background-color: rgb(17, 25, 63);
+    padding: 5px;
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#search-bar{
+    margin-left: 8px;
+    outline: none;
+    background-color: rgb(17, 25, 63);
+    width: 90%;
+    border: 0px;
+    color: white;
+    font-size: 0.8em;
+    height: 100%;
+}
+
+#search-btn{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    margin-left: auto;
+    font-size: 1.1em;
+}
+
+.bell-logo{ 
+    font-size: 1.4em;
+    color: white;
+}
+
+#prof-pic{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+/* Main container */
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    width: 85%;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* main carousel display */
+
+.image-carousel{
+    margin-bottom: 40px;
+    display: flex;
+    width: 95%;
+    position: relative;
+}
+
+.car-pos{
+    width: 55%;
+}
+
+.img-car-size{
+    width: 100%;
+    height: 100%;
+}
+
+.car-1{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: all 1s ease-in-out;
+}
+
+.car-1:hover{
+    box-shadow: 0px 0px 10px 10px black;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    z-index: 2;
+   /* transform: scale(1.2);*/
+}
+
+.car-2{
+    box-shadow: 0px 0px 10px 10px black;
+    transform: scale(1.1);
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    transition: all 1s ease-in-out;
+    box-shadow: 1px;
+}
+
+
+.car-3{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: all 1s ease-in-out;
+}
+
+.car-2:hover{
+    transform: scale(1.2);   
+}
+
+
+
+.car-3:hover{
+    box-shadow: 0px 0px 10px 10px black;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.car-3:hover ~ .car-2{
+    box-shadow: 0px 0px 0px 0px black;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transform: scale(1);
+}
+
+.car-1:hover ~ .car-2{
+    box-shadow: 0px 0px 0px 0px black;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transform: scale(1);
+}
+
+
+/* latest release setion */
+
+.latest-release{
+    width: 100%;
+}
+
+.latest-release-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.latest-release-song{
+    margin-right: 10px;
+    background-color: rgb(11, 16, 39);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    padding-left: 0px;
+    width: 45%;
+}
+
+/* .latest-release-song:hover{
+    box-shadow: 0px 0px 10px 10px black;
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
+} */
+
+
+.latest-release-img{
+    width: 100%;
+    height: 100%;
+}
+
+.latest-release-img-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-release-img-container i{
+    position: absolute;
+    display: none;
+}
+
+.latest-release-img-container:hover img{
+    opacity: 0.5;
+}
+
+.latest-release-img-container:hover i{
+    display: inline-block;
+}
+
+.latest-release-utility{
+    position: relative;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.latest-song-details{
+    margin-left: 20px;
+}
+
+.latest-song-details h5{
+    margin: 15px;
+    margin-top: 0px;
+    font-weight: 500;
+    font-style: 0.8em;
+}
+.latest-song-details p{
+    font-weight: 100;
+    font-size: 0.6em;
+    margin: 15px;
+    color: slategray;
+}
+
+.latest-release-utility span{
+    margin-left: 4px;
+    font-size: 0.9em;
+}
+
+
+.flap-container:hover .flap{
+    min-width: 180px;
+    max-width: 300px;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+
+
+.flap{
+    opacity: 0.8;
+    max-width: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    background-color: white;
+    color: black;
+}
+
+.flap a{
+    font-size: 0.8em;
+    display: block;
+    margin: 2px;
+    padding: 2px;
+}
+
+.latest-release-utility p{
+    font-size: 0.6em;
+    color: slategray;
+}
+
+/* popular artist */
+
+.artist-container{
+    box-sizing: border-box;
+    background-color: rgb(11, 16, 39);
+    padding: 20px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.artist{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-container a{
+    color: inherit; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.artist:hover{
+
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.artist-image-container{
+    width: 100%;
+}
+
+.artist-image{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.artist-image:hover{
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+.artist-name{
+    text-align: center;
+    margin: auto;
+}
+
+.artist-name h5{
+    font-size: 0.7em;
+    font-weight: 300;
+    margin: 0px;
+}
+
+/* genre section */
+
+.genre{
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 25, 63);
+}
+
+.genre-logo-heading-container{
+    padding: 15px;
+    width: 13%;
+    height: auto;
+}
+
+.genre-heading-logo{
+    width: 100%;
+    height: auto;
+}
+
+.genre-logo-container{
+    width: 9%;
+}
+
+.genre-logo-container:hover img{
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.genre-logo{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.genre-logo-name
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+/* Genre extended */
+
+.genre-extend{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre-extended-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.genre-extend-img{
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.genre-extended-container:hover .genre-extend-img{
+    transform: translateZ(100px);
+}
+
+.genre-extended-container p{
+    margin: 0px;
+    text-shadow: 0px 5px 5px black;
+    align-self: center;
+    font-weight: 500;
+    position: absolute;
+}
+
+
+/* Latest english hindi */
+
+.latest-EH-container{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.latest-song-EH{
+    width: 15%;
+}
+
+.latest-song-EH-img-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-song-EH-img-container i{
+    display: none;
+    position: absolute;
+}
+
+.latest-song-EH-img-container:hover{
+    opacity: 0.5;
+}
+
+.latest-song-EH-img-container:hover i{
+    display: inline-block;
+}
+
+.latest-song-EH-img{
+    width: 100%;
+    height: auto;
+}
+
+.latest-song-EH-details h5{
+    margin: 0px;
+    font-size: 0.65em;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.latest-song-EH-details p{
+    margin: 0px;
+    font-size: 0.6em;
+    color: slategray;
+}
+
+
+/* Aside section (QUEUE section) */
+
+.queue-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.queue-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.queue-flap{
+    position: relative;
+    color: green;
+    font-size: medium;
+}
+
+.queue-flap-body{
+    opacity: 0.7;
+    max-width: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 10%;
+    color: black;
+    background-color:white;
+}
+
+.queue-flap-body div{
+    padding: 10px;
+}
+
+.queue-flap:hover .queue-flap-body{
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.queue-songs-list{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.queue-song{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+
+.queue-img-container{
+    margin-left: 30px;
+    width: 13%;
+    box-shadow: 0px 0px 10px 1px grey;
+}
+
+.queue-img{
+    width: 100%;
+}
+
+.queue-song-details{
+    margin-left: 30px;
+    align-self: flex-start;
+}
+
+.queue-song-details p{
+    margin: 5px;
+    color: slategray;
+    font-size: 0.7em;
+}
+
+.queue-song-details h4{
+    font-weight: 500;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+.numbering{
+    font-size: 0.7em;
+    color: slategray;
+}
+
+.fav-icon{
+    margin-left: auto;
+    color: slategray;
+    font-size: 0.9em;
+}
+
+.playing{
+    font-size: 0.8em;
+    color: blue;
+}
+
+/* Footer play bar */
+
+.play-bar{
+    z-index: 5;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(40, 40, 40);
+}
+
+.footer-container{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playing-song{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.playing-song-img-container{
+    width: 25%;
+    margin-right: 10px;
+}
+
+.playing-song-img{
+    min-width: 45px;
+    width: 100%;
+}
+
+.playing-song-details{
+    margin-right: 20px;
+}
+
+.playing-song-details h4{
+    margin: 0px;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.playing-song-details p{
+    margin: 0px;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: slategray;
+}
+
+.fav-icon-bar{
+    display: flex;
+    justify-items: space-between;
+}
+
+.fav-icon-bar i{
+    margin: 2px;
+    font-size: 0.8em;
+    color: slategray;
+}
+
+.footer-controls{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-controls-button{
+    width: 100%;
+    padding-top: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-size{
+    font-size: 0.8em;
+}
+
+#play{
+    font-size: 1.1em;
+}
+
+#pause{
+    font-size: 1.1em;
+    display: none;
+}
+
+#play-pause{
+    display: none;
+}
+
+#play-pause:checked + label #play{
+    display: none;
+}
+#play-pause:checked + label #pause{
+    display: block;
+}
+
+.footer-controls-progress{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-controls-progress input[type="range"]{
+    width: 80%;
+}
+
+.vol-control{
+    width: 50%;
+}
+
+.footer-controls-progress p{
+    color: slategray;
+    font-size: 0.8em;
+}
+
+.sound-controls{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/*Bottom Queue Section ONLY VISIBLE ON LESS THAN 786px*/
+
+
+.queue-bottom-section{
+    transition: all 0.5s ease-in-out;
+    max-height: 0px;
+    overflow: hidden;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.queue-bottom-section .queue-songs-list{
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.queue-bottom-section .queue-song{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 90%;
+}
+
+.queue-bottom-section .queue-img-container{
+    width: 5%;
+    margin-left: 0px;
+}
+
+.playing-icon{
+    color: blue;
+}
+
+.playing-now{
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+#queue-chk{
+    display: none;
+}
+
+
+.queue-open{
+    font-size: 0.9em;
+    margin-left: 5px;
+    color: green;
+    display: none;
+}
+
+/* Media Queries */
+
+
+/* For general responsive design and iPad pro */
+
+@media screen and (max-width: 1200px) {
+
+    .main-container{
+        width: 95%;
+    }
+    .main-content{
+        width: 60%;
+    }
+    .queue-section{
+        width: 30%;
+    }
+
+    .latest-release-song{
+        box-sizing: border-box;
+        width: 90%;
+        padding: 5px;
+        padding-left: 0px;
+    }
+
+    .latest-release-img-container{
+        width: 20%;
+    }
+
+    .genre{
+        overflow: scroll;
+    }
+
+    .genre-logo-heading-container{
+        min-width: 20%;
+        width: 20%;
+    }
+
+    .genre-logo-container{
+        min-width: 12%;
+        margin-right: 20px;
+        width: 12%;
+    }
+
+    .genre-extend{
+        overflow: scroll;
+    }
+
+    .genre-extended-container{
+        width: 40%;
+        min-width: 40%;
+        margin-right: 20px;
+    }
+
+    .latest-song-EH{
+        min-width: 25%;
+        width: 25%;
+        margin-right: 30px;
+    }
+
+    .latest-EH-container{
+        overflow: scroll;
+    }
+
+    .artist-container{
+        overflow: scroll;
+    }
+
+    .artist{
+        margin-right: 20px;
+        min-width: 20%;
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+   
+}
+
+/* For iPads in landscape */
+
+@media screen and (max-width: 900px)
+{
+
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-chk:checked + .menu-bar-drop{
+        max-height: 80vh;
+    }
+
+    #queue-chk:checked + .queue-bottom-section {
+        overflow: scroll;
+        max-height: 40vh;
+    }
+
+    .playing-song{
+        display: none;
+    }
+
+    .queue-open{
+        display: block
+    }
+
+    .main-container{
+        margin-top: 120px;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .image-carousel{
+        flex-direction: column;
+        width: 60%;
+        align-self: center;
+        position: relative;
+    }
+    
+    .car-pos{
+        width: 100%;
+    }
+    
+    .img-car-size{
+        width: 100%;
+        height: auto;
+    }
+    
+    .car-1{
+        background-color: black;
+        transition: all 1s ease-in-out;
+    }
+
+    .car-2{
+        background-color: black;
+        box-shadow: 0px 0px 10px 10px black;
+        transform: scale(1.1);
+        z-index: 1;
+        left: 0%;
+        top: 20%;
+        transition: all 1s ease-in-out;
+        box-shadow: 1px;
+    }
+    
+    .car-3{
+        background-color: black;
+        bottom: 0%;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        transition: all 1s ease-in-out;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    #logo-name{
+        display: none;
+    }
+    
+    #fav-btn{
+        display: none;
+    }
+
+    .bell-logo{
+        display: none;
+    }
+
+    #search-bar-container{
+        width: 100%;
+    }
+
+    #search-bar-div{
+        width: 75%;
+    }
+
+    #search-bar{
+        outline: none;
+        width: 85%;
+    }
+
+    #logo-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #prof-pic{
+        height: 50px;
+        width: 50px;
+    }
+
+    .queue-section{
+        display: none;
+    }
+
+    .latest-release-song{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5px;
+        padding-left: 0px;
+    }
+
+    .latest-release-img-container{
+        width: 15%;
+    }
+
+    .genre-logo-heading-container{
+        min-width: 15%;
+        width: 15%;
+    }
+
+    .genre-logo-container{
+        min-width: 10%;
+        margin-right: 20px;
+        width: 10%;
+    }
+
+    .genre-extended-container{
+        width: 35%;
+        min-width: 35%;
+        margin-right: 20px;
+    }
+
+    .latest-song-EH{
+        min-width: 20%;
+        width: 20%;
+        margin-right: 30px;
+    }
+
+    .latest-EH-container{
+        overflow: scroll;
+    }
+
+    .artist{
+        margin-right: 20px;
+        min-width: 20%;
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* For iPads and mobile devices */
+
+@media screen and (max-width:786px){
+
+    #search-bar-div{
+        width: 65%;
+    }
+
+    #prof-pic{
+        height: 35px;
+        width: 35px;
+    }
+
+    #logo-img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .image-carousel{
+        width: 90%;
+    }
+
+    .latest-release-song{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5px;
+        padding-left: 0px;
+    }
+
+    .latest-release-img-container{
+        width: 20%;
+    }
+
+    .genre-logo-heading-container{
+        min-width: 20%;
+        width: 20%;
+    }
+
+    .genre-logo-container{
+        min-width: 14%;
+        margin-right: 20px;
+        width: 14%;
+    }
+
+    .genre-extended-container{
+        width: 40%;
+        min-width: 40%;
+        margin-right: 20px;
+    }
+
+    .latest-song-EH{
+        min-width: 30%;
+        width: 30%;
+        margin-right: 30px;
+    }
+
+    .latest-EH-container{
+        overflow: scroll;
+    }
+
+    .artist{
+        margin-right: 20px;
+        min-width: 30%;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .footer-controls{
+        width: 55%;
+    }
+
+    .sound-controls{
+        width: 15%;
+    }
+
+    .vol-control{
+        display: none;
+    }
+
+    #volume-dwn{
+        display: none;
+    }
+
+    #volume-up{
+        display: none;
+    }
+
+}
