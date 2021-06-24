@@ -207,7 +207,7 @@ section{
     filter: blur(0px);
     -webkit-filter: blur(0px);
     z-index: 2;
-   /* transform: scale(1.2);*/
+    transform: scale(1.2);
 }
 
 .car-2{
